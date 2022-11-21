@@ -14,6 +14,11 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 ```bash
 nano /etc/stunnel/stunnel.conf
 ```
+## rubah port default sslh 443 ke 4443
+```bash
+nano /etc/default/sslh
+sudo /etc/init.d/sslh restart
+```
 ## rubah port v2ray ke 443
 ```bash
 ketik : menu ->[9] ->[3] ->[1]->masukan port 443
